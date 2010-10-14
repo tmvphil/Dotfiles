@@ -1,0 +1,45 @@
+!***URxvt****************************
+URxvt*termName: rxvt-256color
+
+! Settings
+URxvt*scrollBar: false
+URxvt*font:     xft:inconsolata:pixelsize=18:antialias=true
+URxvt*boldFont: xft:inconsolata:bold:pixelsize=18:antialias=true
+
+! Clickable URLS
+URxvt*perl-ext-common: default,matcher
+URxvt*urlLauncher:     /usr/bin/uzbl-browser
+URxvt.matcher.button:  1
+
+! Colors
+URxvt*background: #111111
+URxvt*foreground: #ffffff
+! Black + DarkGrey
+URxvt*color0: #333333
+URxvt*color8: #666666
+! DarkRed + Red
+URxvt*color1: #d15517
+URxvt*color9: #d11723
+! DarkGreen + Green
+URxvt*color2: #36b217
+URxvt*color10: #00d56a
+! DarkYellow + Yellow
+URxvt*color3: #d1b217
+URxvt*color11: #ffea55
+! DarkBlue + Blue
+URxvt*color4: #55aaff
+URxvt*color12: #1793d1
+! DarkMagenta + Magenta
+URxvt*color5: #b217d1
+URxvt*color13: #d11793
+! DarkCyan + Cyan
+URxvt*color6: #93d1b2
+URxvt*color14: #17d1b2
+! LightGrey + White
+URxvt*color7: #eeeeee
+URxvt*color15: #ffffff
+
+!***Dzen2****************************
+!dzen2.font:         xft:monospace:pixelsize=18:antialias=true
+dzen2.font: -bitstream-bitstream vera sans mono-medium-r-*-*-*-*-*-*-*-*-*-*
+dzen2.foreground:   #36b217

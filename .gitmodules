@@ -4,3 +4,15 @@
 [submodule ".vim/bundle/snipmate"]
 	path = .vim/bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = http://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/ack"]
+	path = .vim/bundle/ack
+	url = http://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = http://github.com/scrooloose/syntastic.git
