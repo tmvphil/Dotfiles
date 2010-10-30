@@ -67,20 +67,22 @@ mykeys = [
          ,("M-M4-j", sendMessage $ Go D)
          ,("M-M4-k", sendMessage $ Go U)
          ,("M-M4-l", sendMessage $ Go R)
-         ,("M4-n", appendFilePrompt myXPConfig "/home/phil/.notes")
+         ,("M-+", spawn "vol up")
+         ,("M--", spawn "vol down")
+         ,("M4-n", appendFilePrompt myXPConfig "/home/phil/doc/notes")
          ,("M4-x", shellPrompt myXPConfig)
          -------------------
          -- Internet Keys --
          -------------------
-         ,("M4-i o", spawn "/usr/bin/uzbl-browser")
+         ,("M4-i o", spawn "/usr/bin/firefox")
          ,("M4-i b", launchApp myXPConfig {defaultText="~/.bookmarks/"} "/home/phil/bin/open_bookmark.sh" "Open Bookmark:")
          ,("M4-i g", launchApp myXPConfig "surfraw google -l" "Feeling Lucky:")
-         ,("M4-i r", spawn "/usr/bin/uzbl-browser www.reddit.com")
-         ,("M4-i h", spawn "/usr/bin/uzbl-browser news.ycombinator.com")
+         ,("M4-i r", spawn "/usr/bin/firefox www.reddit.com")
+         ,("M4-i h", spawn "/usr/bin/firefox news.ycombinator.com")
          ,("M4-i s", launchApp myXPConfig "surfraw" "Surfraw:")
          ,("M4-i a w", launchApp myXPConfig "surfraw ddg !archwiki" "ArchWiki:")
          ,("M4-i a u", launchApp myXPConfig "surfraw aur" "AUR:")
-         ,("M4-i a f", spawn "/usr/bin/uzbl-browser bbs.archlinux.org")
+         ,("M4-i a f", spawn "/usr/bin/firefox bbs.archlinux.org")
          ----------------
          -- Music Keys --
          ----------------
