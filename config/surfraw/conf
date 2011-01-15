@@ -1,0 +1,4 @@
+SURFRAW_graphical=yes
+SURFRAW_text_browser=/usr/bin/lynx
+SURFRAW_graphical_browser=/usr/bin/firefox
+SURFRAW_graphical_remote=no
