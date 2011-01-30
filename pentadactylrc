@@ -1,0 +1,20 @@
+"1.0b5 (created: 2011/01/20 22:11:06)
+
+loadplugins '\.(js|penta)$'
+
+" vim: set ft=pentadactyl:qmark r http://www.reddit.com
+silent qmark h http://news.ycombinator.com
+silent qmark m https://mail.google.com
+silent qmark d https://docs.google.com
+silent qmark c http://chalk.uchicago.edu
+silent qmark l http://www.lesswrong.com
+
+silent qmark R javascript:(function(){readConvertLinksToFootnotes=true;readStyle='style-newspaper';readSize='size-medium';readMargin='margin-medium';_readability_script=document.createElement('script');_readability_script.type='text/javascript';_readability_script.src='http://lab.arc90.com/experiments/readability/js/readability.js?x='+(Math.random());document.documentElement.appendChild(_readability_script);_readability_css=document.createElement('link');_readability_css.rel='stylesheet';_readability_css.href='http://lab.arc90.com/experiments/readability/css/readability.css';_readability_css.type='text/css';_readability_css.media='all';document.documentElement.appendChild(_readability_css);_readability_print_css=document.createElement('link');_readability_print_css.rel='stylesheet';_readability_print_css.href='http://lab.arc90.com/experiments/readability/css/readability-print.css';_readability_print_css.media='print';_readability_print_css.type='text/css';document.getElementsByTagName('head')[0].appendChild(_readability_print_css);})();
+
+silent qmark P javascript:void(location.href=%22http://proxy.uchicago.edu/login?url=%22+location.href)
+
+silent qmark I javascript:function%20iprl5(){var%20d=document,z=d.createElement('scr'+'ipt'),b=d.body,l=d.location;try{if(!b)throw(0);d.title='(Saving...)%20'+d.title;z.setAttribute('src',l.protocol+'//www.instapaper.com/j/YIMGyNAMpif4?u='+encodeURIComponent(l.href)+'&t='+(new%20Date().getTime()));b.appendChild(z);}catch(e){alert('Please%20wait%20until%20the%20page%20has%20loaded.');}}iprl5();void(0)
+
+silent qmark M javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://www.mendeley.com/min.php/bookmarklet');
+
+set passkeys+='https://mail\.google\.com'
