@@ -2,13 +2,13 @@
 " General Settings #
 "  # # # # # # # # #
 filetype off
-call pathogen#helptags()
+"call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
 set nocompatible
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set smarttab
 set showcmd
@@ -21,9 +21,10 @@ set ignorecase
 set smartcase
 set gdefault
 set autoindent
-" set colorcolumn=80
+set textwidth=80
 set backupdir=~/.vim/backup
 colorscheme wombat256
+" colorscheme ingretu
 syntax on
 
 "  # # # # #
@@ -39,6 +40,10 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>b :buf 
+nnoremap gt :bnext<cr>
+nnoremap gT :bprevious<cr>
+
 "  # # # # # # #
 " Autocommands #
 "  # # # # # # #

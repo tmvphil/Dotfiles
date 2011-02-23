@@ -25,3 +25,15 @@
 [submodule "vim/bundle/minibufexpl"]
 	path = vim/bundle/minibufexpl
 	url = git@github.com:vim-scripts/minibufexpl.vim.git
+[submodule ".dotfiles/bundle/ingretu"]
+	path = .dotfiles/bundle/ingretu
+	url = http://github.com/gmarik/ingretu.git
+[submodule "vim/bundle/ingretu"]
+	path = vim/bundle/ingretu
+	url = http://github.com/gmarik/ingretu.git
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
+	url = http://github.com/wincent/command-t.git
+[submodule "vim/bundle/Command-T"]
+	path = vim/bundle/Command-T
+	url = http://github.com/wincent/Command-T.git

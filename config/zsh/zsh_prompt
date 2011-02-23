@@ -1,13 +1,20 @@
+setopt prompt_subst
+autoload -Uz vcs_info
+
 precmd() { 
-    if [ $? -ne 0 ]; then
-        STATUS="─(%B%F{red}$?%b%F{blue})"
+    retcode=$?
+    if [ $retcode -ne 0 ]; then
+        STATUS="─(%B%F{red}$retcode%b%F{blue})"
     else
         STATUS=""
     fi
 
-    if [ $USER != phil ]
-
-    print -rP "%F{blue}┌─[%B%F{green}%~%b%F{blue}]$STATUS" }
+    if [ $USERNAME != phil ]; then
+      UNAME="─($USERNAME)─"
+    else
+      print -rP "%F{blue}┌─[%B%F{green}%~%b%F{blue}]$UNAME$STATUS"
+    fi
+    }
 
 PROMPT="%F{blue}└─╼ %f"
 
