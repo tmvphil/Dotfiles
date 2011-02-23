@@ -12,8 +12,9 @@ precmd() {
     if [ $USERNAME != phil ]; then
       UNAME="─($USERNAME)─"
     else
-      print -rP "%F{blue}┌─[%B%F{green}%~%b%F{blue}]$UNAME$STATUS"
+      UNAME=""
     fi
+    print -rP "%F{blue}┌─[%B%F{green}%~%b%F{blue}]$UNAME$STATUS"
     }
 
 PROMPT="%F{blue}└─╼ %f"
