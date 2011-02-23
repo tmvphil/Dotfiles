@@ -10,7 +10,7 @@ precmd() {
     fi
 
     if [ $USERNAME != phil ]; then
-      UNAME="─($USERNAME)─"
+      UNAME="─(%B%F{orange}$USERNAME%b%F{blue})"
     else
       UNAME=""
     fi
